@@ -5,47 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cake Store</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 </head>
 <body>
-    <!--Began With Nav-->
-    <nav> 
-        <p class="title">Cake Store<sub>&copy;Ahmed Jabban</sub> </p>
-        <ul>
-            <li class="always-active"><a href="index.html">Home</a></li>
-            <li><a href="#explore-text-transport">Explore</a></li>
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="mailto:abcdefg@gmail.com">Contact Us</a></li>
-        </ul>
-    </nav>
-    <!--The End Of Nav-->
-    <!--The img below is the back ground of body-->
-    <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2021%2F12%2F20%2Fchocolate-cupcakes-FT-RECIPE1221.jpg" alt="">
-    <!--The form below contain(Search_box , Button)-->
-    <form action="" method="get" class="form_search">
-        <input type="text" placeholder="Type any kind you want......" name="Searched" class="search_box">
-        <button class="search_button">Search</button>
-    </form>
-    <!--Began With Section-->
-    <section>
-        <div class="cover" id="explore-text-transport"></div><!--This div was made to dont make the nav cover on the (Explore text with red background) when the user click on (Explore button in the nav) so the nav transport to this div and cover it instead of the (Explore text)-->
-        <p class="explore-text">Explore</p><!--This is the Explore text with back ground red in the mid of page-->
-        <div class="imge-containor"><!--This div contain all the imges under the explore text-->
-            <div class="b-cake"><!--This div for the first img-->
-                <img src="cake.png" alt="Brithday Cake" title="Brithday Cake">
+
+    <header>
+        <nav> 
+            <a class="title" href="index.html">Cake Store</a>
+            <ul>
+                <li><a href="index.html" class="always-active">Home</a></li>
+                <li><a href="#explore-text-transport">Explore</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="mailto:abcdefg@gmail.com">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="form-se">
+        <form action="" method="get" class="form_search">
+            <input type="text" placeholder="Type any kind you want......" name="Searched" class="search_box">
+            <button class="search_button">Search</button>
+        </form>
+    </section>
+
+    <section class="exp-se" id="explore-text-transport">
+        <div class="cont-exp">
+            <div class="title-exp-cont">
+                <p>Explore</p>
             </div>
-            <div class="n-cake"><!--This div for the second img-->
-                <img src="cake_b.png" alt="Normal Cake" title="Normal Cake">
+            <div class="image-exp-cont">
+                <div class="n-cake cake">
+                    <div>
+                        <p class="title-up-cake">Birthday Cake</p>
+                        <img src="cake.png" alt="Normal Cake">
+                    </div>
+                </div>
+                <div class="b-cake cake">
+                    <div>
+                        <p class="title-up-cake">Normal Cake</p>
+                        <img src="cake_b.png" alt="Birthday Cake">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!--End Of Section-->
-    <!--Began With Footer-->
-    <footer>
-        <div class="footer-content"><!--This div contain all the items in footer-->
-            <p class="copy-right" id="about-us">The Owner & Programmer: &copy;Ahmed Jabban</p>
-            <p class="contact-phone">Phone: 0219538125 (example)</p>
-            <p class="contact-email">Email: example@gmail.com</p>
+
+    <footer id="about-us">
+        <div class="footer-cont">
+            <p>&copy; Ahmed-Jabban</p>
+            <p>Email: abcdefg@gmail.com</p>
+            <p>Phone: 0123456789</p>
         </div>
     </footer>
+
 </body>
 </html>

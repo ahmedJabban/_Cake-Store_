@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&family=Overpass:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
 }
 
 html{
@@ -12,65 +15,62 @@ body{
     overflow-x: hidden;
 }
 
-body, img{
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 nav{
-    position: relative;
     background-color: orange;
     width: 100%;
-    height: 80px;
-    border-spacing: 0px;
-    z-index: 10;
+    height: fit-content;
     position: fixed;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 nav .title{
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 0 100px;
-    line-height: 80px;
-    font-size: 30px;
+    font-size: 35px;
     display: inline-block;
+    margin-left: 20px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 nav sub{
     font-size: 10px;
     text-transform: capitalize;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 nav ul{
-    float: right;
-    margin-right: 30px;
+    margin: auto 20px;
 }
 
 nav ul li{
     display: inline-block;
-    padding: 0 20px;
-    line-height: 80px;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     text-transform: capitalize;
-    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.form_search{
-    position: absolute;
-    top: 50%;
-    left: 37%;
-    z-index: 0;
-    
+nav ul li a:hover , .always-active{
+    background-color: darkorange;
+}
+
+.form-se{
+    width: 100%;
+    height: 100vh;
+    background-image: url(wallpaper.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .search_button{
@@ -97,105 +97,181 @@ nav ul li a {
     text-align: center;
 }
 
-section{
-    position: absolute; /*Its absolute to body to center the section*/
-    top: 100%;
+.exp-se{
     width: 100%;
-    height: 100%;
-    margin: 0;
+    height: 120vh;
+    padding: 120px 20px;
+    background-image: url(explore-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.explore-text{
-    position: absolute;
-    left: 44%;
-    color: rgb(255, 255, 255);
-    padding: 10px;
+.cont-exp{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-exp-cont{
+    margin-bottom: 40px;
+}
+
+.title-exp-cont p{
+    color: white;
+    background-color: darkred;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 20px 30px;
     font-size: 30px;
-    background-color: rgb(160, 0, 0);
-    outline: none;
-    border-radius: 10px;
-    line-height: 50px;
-    width: 200px;
+    cursor: pointer;
+}
+
+.image-exp-cont{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.image-exp-cont .cake{
     text-align: center;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
 }
 
-.cover{
-    width: 100px;
-    height: 100px;
-    visibility:hidden; /*make it visible and color the background to see it in the page if you want*/
-}
-
-.imge-containor{
-    position: absolute;
-    left: 0;
-    padding: 10px;
-    margin-top: 30px;
+.image-exp-cont div img{
     width: 100%;
     height: 100%;
 }
 
-.b-cake{
-    position: absolute;
-    right: 0;
-    bottom: 125px;
-    right: 106px;
+.image-exp-cont .cake div{
+    width: 50%;
+    height: fit-content;
+    background-color: #eee;
+    padding: 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
     cursor: pointer;
 }
 
-.n-cake{
-    position: absolute;
-    bottom: 125px;
-    left: 106px;
-    cursor: pointer;
-}
-
-.imge-containor .b-cake img{
-    margin-top: 10px;
-    height: 400px;
-    width: 400px;
-    background-color: white;
-    background-repeat: no-repeat;
-    outline: none;
-    border-radius: 30px;
-    padding: 20px;
-}
-
-.imge-containor .n-cake img{
-    margin-top: 10px;
-    height: 400px;
-    width: 400px;
-    background-color: white;
-    background-repeat: no-repeat;
-    outline: none;
-    border-radius: 30px;
-    padding: 20px;
-}
-
-.footer-content{
-    background-color: orange;
-    height: 200px;
-    width: 100%;
-    padding: 20px;
-    margin-top: -4px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-.footer-content p{
-    margin-top: 30px;
+.image-exp-cont .cake .title-up-cake{
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Lobster', cursive;
+    background-color: royalblue;
+    padding: 10px;
+    border-radius: 20px;
     color: white;
 }
 
-li:hover , .search_button:hover, .always-active{
-    background-color: darkorange;
+.image-exp-cont .cake div:hover{
+    opacity: 0.8;
+    background-color: red;
 }
 
-.imge-containor img:hover{
-    background-color: rgb(211, 211, 211);
-    opacity: 0.90;
-    transition: 0.25s;
+footer{
+    padding: 100px 20px 20px 20px;
+    width: 100%;
+    height: fit-content;
+    background-color: orange;
+    text-align: center;
+}
+
+footer .footer-cont p{
+    font-size: 25px;
+    color: white;
+    margin-bottom: 25px;
 }
 
 ::selection{
     background-color: black;
     color: rgb(255, 0, 255);
+}
+
+@media (max-width:540px){
+
+    header nav{
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav .title{
+        font-size: 17px;
+        margin-bottom: 7px;
+    }
+
+    header nav ul{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    header nav ul li{
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    header nav ul li a{
+        margin: auto;
+        font-size: 10px;
+        padding: 7px;
+    }
+
+    .search_box{
+        width: 72%;
+    }
+
+    .exp-se{
+        padding-top: 100px;
+    }
+
+    .title-exp-cont p{
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+
+    .image-exp-cont .cake div img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .image-exp-cont .cake div{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        padding: 20px 50px;
+    }
+
+    .image-exp-cont .cake .title-up-cake{
+        width: fit-content;
+        font-size: 10px;
+    }
+
+    footer{
+        padding: 50px 20px 20px 20px;
+    }
+
+    footer .footer-cont p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width:280px){
+
+    .exp-se, .form-se ,footer{
+        width: 125vw;
+    }
 }
