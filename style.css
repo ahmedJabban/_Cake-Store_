@@ -233,18 +233,32 @@ footer .footer-cont p{
         width: 72%;
     }
 
+    .form-se{
+        height: 100vh;
+    }
+
     .exp-se{
         padding-top: 100px;
+        height: 100vh;
     }
 
     .title-exp-cont p{
         font-size: 20px;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
 
     .image-exp-cont .cake div img{
-        width: 75px;
-        height: 75px;
+        width: 85px;
+        height: 85px;
+    }
+
+    .image-exp-cont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-exp-cont .cake{
+        margin-bottom: 30px;
     }
 
     .image-exp-cont .cake div{
@@ -252,7 +266,7 @@ footer .footer-cont p{
         flex-direction: column;
         justify-items: center;
         align-items: center;
-        padding: 20px 50px;
+        padding: 25px 80px;
     }
 
     .image-exp-cont .cake .title-up-cake{
@@ -273,5 +287,9 @@ footer .footer-cont p{
 
     .exp-se, .form-se ,footer{
         width: 125vw;
+    }
+
+    .exp-se{
+        height: 110vh;
     }
 }
